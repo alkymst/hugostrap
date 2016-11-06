@@ -1,0 +1,10 @@
+{{ partial "layouts/landing.begin.html" . }}
+	<div class="home">
+		<h1 class="heading">{{ .Title }}</h1>
+		<p class="slogan"><em>{{ .Site.Params.slogan }}</em>
+    <p class="welcome">
+    「 <a href="{{ .Site.BaseURL }}blog/">Hi.</a> 」
+    </p>
+		{{ .Content }}
+	</div>
+	{{ partial "layouts/landing.end.html" . }}

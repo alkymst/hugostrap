@@ -1,0 +1,28 @@
+{
+  "name": "hugostrap",
+  "version": "0.0.1",
+  "private": true,
+  "authors": [
+    "Nathan Smith <webalkymst@gmail.com>"
+  ],
+  "description": "hugo + gulp.js + bootstrap 4",
+  "keywords": [
+    "blog",
+    "static",
+    "gulp",
+    "bootstrap",
+    "site"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-alpha.4"
+  }
+}

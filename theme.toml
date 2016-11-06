@@ -1,0 +1,12 @@
+name = "hugostrap"
+license = "MIT"
+licenselink = "https://github.com/alkymst/hugostrap/blob/master/LICENSE.md"
+description = "Boilterplate with bootstrap 4, gulp.js and hugo"
+
+tags = ["gulp", "bootstrap", ]
+features = ["blog", ]
+
+[author]
+    name = "Nathan Smith"
+    homepage = "http://alkymst.com/"
+    source_repo = "https://github.com/alkymst/hugostrap"
