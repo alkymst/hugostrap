@@ -4,11 +4,20 @@
       "files": [
         "scripts/main.js"
       ],
+      "vendor": [
+        "assets/vendor/theme/gmaps.init.js",
+        "assets/vendor/theme/front.js",
+        "assets/vendor/owl-carousel/owl.carousel.js"
+      ],
       "main": true
     },
     "main.css": {
       "files": [
         "styles/main.scss"
+      ],
+      "vendor": [
+        "assets/vendor/owl-carousel/owl.carousel.css",
+        "assets/vendor/owl-carousel/owl.theme.css"
       ],
       "main": true
     },

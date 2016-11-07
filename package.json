@@ -11,12 +11,7 @@
   "bugs": {
     "url": "https://github.com/alkymst/hugostrap/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+  "license": "MIT",
   "homepage": "https://github.com/alkymst/hugostrap",
   "keywords": [
     "static",

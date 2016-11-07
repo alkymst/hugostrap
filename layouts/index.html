@@ -1,10 +1,36 @@
-{{ partial "layouts/landing.begin.html" . }}
-	<div class="home">
-		<h1 class="heading">{{ .Title }}</h1>
-		<p class="slogan"><em>{{ .Site.Params.slogan }}</em>
-    <p class="welcome">
-    「 <a href="{{ .Site.BaseURL }}blog/">Hi.</a> 」
-    </p>
-		{{ .Content }}
-	</div>
-	{{ partial "layouts/landing.end.html" . }}
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "carousel.html" . }}
+
+        {{ partial "features.html" . }}
+
+        {{ partial "testimonials.html" . }}
+
+        {{ partial "see_more.html" . }}
+
+        {{ partial "recent_posts.html" . }}
+
+        {{ partial "clients.html" . }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

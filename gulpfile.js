@@ -1,4 +1,5 @@
 // ## Globals
+require('events').EventEmitter.prototype._maxListeners = 100;
 var argv         = require('minimist')(process.argv.slice(2));
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync  = require('browser-sync').create();
@@ -250,7 +251,7 @@ gulp.task('watch', function() {
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
-  gulp.watch([path.source + 'images/**/*'], ['images']);
+  gulp.watch([path.source + 'assets/images/**/*'], ['images']);
   gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
 });
 
