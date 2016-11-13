@@ -6,8 +6,7 @@
       ],
       "vendor": [
         "assets/vendor/theme/gmaps.init.js",
-        "assets/vendor/theme/front.js",
-        "assets/vendor/owl-carousel/owl.carousel.js"
+        "assets/vendor/theme/front.js"
       ],
       "main": true
     },
@@ -16,8 +15,6 @@
         "styles/main.scss"
       ],
       "vendor": [
-        "assets/vendor/owl-carousel/owl.carousel.css",
-        "assets/vendor/owl-carousel/owl.theme.css"
       ],
       "main": true
     },
