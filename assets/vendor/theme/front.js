@@ -108,33 +108,29 @@ function sliders () {
     })
 
     $('.project').owlCarousel({
-      navigation: true, // Show next and prev buttons
-      navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-      slideSpeed: 300,
-      paginationSpeed: 400,
-      autoPlay: true,
-      stopOnHover: true,
-      singleItem: true,
-      afterInit: '',
-      lazyLoad: true
+      items: 1,
+      nav: true, // Show next and prev buttons
+      // navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      // slideSpeed: 300,
+      // dotsSpeed: 400,
+      // autoPlay: true,
+      // stopOnHover: true,
+      // singleItem: true,
+      // afterInit: '',
+      // lazyLoad: true
     })
 
     $('.homepage').owlCarousel({
-      navigation: false, // Show next and prev buttons
-      navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-      slideSpeed: 2000,
-      paginationSpeed: 1000,
-      autoPlay: true,
-      stopOnHover: true,
-      singleItem: true,
-      lazyLoad: false,
-      addClassActive: true,
-      afterInit: function () {
-        // animationsSlider()
-      },
-      afterMove: function () {
-        // animationsSlider()
-      }
+      items: 1,
+      nav: true, // Show next and prev buttons
+      // navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      // slideSpeed: 2000,
+      // dotsSpeed: 1000,
+      // autoPlay: true,
+      // stopOnHover: true,
+      // singleItem: true,
+      // lazyLoad: false,
+      // addClassActive: true
     })
   }
 }
@@ -361,22 +357,27 @@ $.fn.alignElementsSameHeight = function () {
 }
 
 var windowWidth
-$(window).on('load', function () {
+$(window).load(function () {
   windowWidth = $(window).width()
 
   $(this).alignElementsSameHeight()
   pictureZoom()
 })
 
-$(window).resize(function () {
-  var newWindowWidth = $(window).width()
 
-  if (windowWidth !== newWindowWidth) {
-    setTimeout(function () {
-      $(this).alignElementsSameHeight()
-      fullScreenContainer()
-      pictureZoom()
-    }, 205)
-    windowWidth = newWindowWidth
-  }
-})
+$( document ).ready(function() {
+
+  $(window).resize(function () {
+    var newWindowWidth = $(window).width()
+
+    if (windowWidth !== newWindowWidth) {
+      setTimeout(function () {
+        $(this).alignElementsSameHeight()
+        fullScreenContainer()
+        pictureZoom()
+      }, 205)
+      windowWidth = newWindowWidth
+    }
+  })
+
+});

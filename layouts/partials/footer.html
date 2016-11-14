@@ -9,7 +9,7 @@
 
             {{ .Site.Params.about_us | safeHTML }}
 
-            <hr class="hidden-md hidden-lg hidden-sm">
+            <hr class="hidden-sm-up">
 
         </div>
         <!-- /.col-md-4 -->
@@ -38,7 +38,7 @@
                 {{ end }}
             </div>
 
-            <hr class="hidden-md hidden-lg">
+            <hr class="hidden-md-up">
 
         </div>
         <!-- /.col-md-4 -->
@@ -52,7 +52,7 @@
 
             <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
 
-            <hr class="hidden-md hidden-lg hidden-sm">
+            <hr class="hidden-sm-up">
 
         </div>
         <!-- /.col-md-4 -->
@@ -73,6 +73,7 @@ _________________________________________________________ -->
 
 <div id="copyright">
     <div class="container">
+      <div class="row">
         <div class="col-md-12">
             {{ if isset .Site.Params "copyright" }}
             <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
@@ -84,6 +85,7 @@ _________________________________________________________ -->
               Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
             </p>
         </div>
+      </div>
     </div>
 </div>
 <!-- /#copyright -->
